@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/>
         <title>CODERZONE RGUKT | RGUKTWEB</title>
         <meta name="description" content="Coding is used to program the websites, apps, and other technologies we interact with every day. If you pay any attention to the technology world, you've undoubtedly heard the terms coding and programming dozens of times. Many of the best tech careers require the ability to code."/>
-        <?php echo $csslinks;?>
         <style>
             body,html{
                 height:100%;
