@@ -1,16 +1,3 @@
-<?php
-
-include 'xyz.php';
-$main = str_replace('navbar navbar-example','navbar navbar-example sticky',$main);
-$footer = str_replace('../../','',$footer);
-$csslinks = str_replace('../../','',$csslinks);
-$main = str_replace('<div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
-                                <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
-                                    <i class="bx bx-menu bx-sm"></i>
-                                </a>
-                            </div>','',$main);
-
-?>
 <!DOCTYPE html>
 <html lang="en" class="light-style layout-menu-fixed" dir="ltr">
     <head>
@@ -33,10 +20,6 @@ $main = str_replace('<div class="layout-menu-toggle navbar-nav align-items-xl-ce
     <body>
         <main class="layout-wrapper layout-content-navbar" style="height:60px;padding:0;">
             <div class="layout-container">
-        <?php
-        $main = str_replace('<div class="layout-page" style="width:100%;position:fixed;background:#fff">','<div class="sticky" style="width:100%;position:fixed;background:#fff;z-index:999999">',$main);
-        echo $main?>
-        
         <main class="container" style="padding:10px;">
             <div class="row gy-3">
                 <div class="col-lg-4">
@@ -56,12 +39,4 @@ $main = str_replace('<div class="layout-menu-toggle navbar-nav align-items-xl-ce
                     </div></a>
                 </div>
             </div>
-        </main>
-        <script type="text/javascript" language="javascript">
-      var aax_size='300x250';
-      var aax_pubname = 'promoter065-21';
-      var aax_src='302';
-    </script>
-    <script type="text/javascript" language="javascript" src="http://c.amazon-adsystem.com/aax2/assoc.js"></script>
-        <?php $footer = str_replace('content-footer','',$footer);
-        echo $footer;?>
+              </main>
